@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panos Informatica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1 class="tituloBanner">Panos Informatica</h1>
+    </div>
+    <div class="pcPresupuesto">
+        <h2 class="subtitulo">Tu pc gamer</h2>
+        <div class="formComponentes">
+            <form id="formPresupuesto">
+                <h3 class="componente">GABINETE</h3>
+                <select class="optionsDropMenu" name="gabinete" id="gabinete" onchange="pedirModGabinete(this.value)">
+                    <option value=""></option>
+                    <option value="gabinete v200">
+                        Gabinete Thermaltake V200 Tempered Glass Ryzen Edition Sin fuente($8.000)</option>
+                    <option value="gabinete aerocool">
+                        Gabinete Aerocool Mirage G BK V2 3x120mm aRGB Fan ATX ($17.900)</option>
+                    <option value="gabinete asus tuf">
+                        Gabinete ASUS TUF GT501 Vidrio Templado White 3x120mm ARGB ($39.400)</option>
+                </select>
+                <h3 class="componente">FUENTE</h3>
+                <select class="optionsDropMenu" name="fuente" id="fuente" onchange="pedirModFuente(this.value)">
+                    <option value=""></option>
+                    <option value="fuente gigabyte 750w">Fuente Gigabyte 750W 80 Plus Gold Modular P-P750GM($23.000)
+                    </option>
+                    <option value="fuente asus rog">Fuente ASUS ROG STRIX 750G 80 Plus Gold 750W Full Modular($26.500)
+                    </option>
+                    <option value="fuente asus thor">Fuente ASUS ROG THOR 850P 80 Plus Platinum 850W Full
+                        modular($49.000)</option>
+                </select>
+                <h3 class="componente">DISCO SOLIDO</h3>
+                <select class="optionsDropMenu" name="ssd" id="ssd" onchange="pedirModSsd(this.value)">
+                    <option value=""></option>
+                    <option value="ssdM.2WD">Disco Solido SSD M.2 WD 1TB WD_Black 5000MB/s NVMe PCI-E x4 Gen 4($26.400)
+                    </option>
+                    <option value="ssdM.2adata">Disco Solido SSD M.2 ADATA 1TB XPG Gammix 3900MB/s NVMe PCI-Ex4
+                        ($29.500)</option>
+                    <option value="ssdM.2teamForce">Disco Solido SSD M.2 Team 2TB T-Force A440 7000MB/s
+                        NVMePCI-E($50.500)</option>
+                </select>
+                <h3 class="componente">MOTHERBOARD</h3>
+                <select class="optionsDropMenu" name="mother" id="mother" onchange="pedirModMother(this.value)">
+                    <option value=""></option>
+                    <option value="motherasusb550">Mother ASUS TUF GAMING B550-PLUS WIFI II AM4 ($40.000)</option>
+                    <option value="motherasusx570">Mother ASUS TUF X570-PLUS GAMING WiFi AM4 PCIe M.2 ($48.500)</option>
+                    <option value="motherasusrogb550">Mother ASUS ROG STRIX B550-F GAMING AM4 PCI-E 4.0 ($52.500)
+                    </option>
+                    <option value="motherGigabyteB560">Moth Gigabyte B560 AORUS PRO AX S1200 intel($47.300)</option>
+                    <option value="motherMsiMag">Mother MSI MAG B660M MORTAR DDR4 S1700 intel($42.500)</option>
+                    <option value="motherasusrogZ590">Mother ASUS ROG STRIX Z590-I GAMING intel($66.000)</option>
+                </select>
+                <h3 class="componente">PROCESADOR</h3>
+                <select class="optionsDropMenu" name="cpu" id="cpu" onchange="pedirModProce(this.value)">
+                    <option value=""></option>
+                    <option value="r52600">Ryzen 5 2600 ($25.000)</option>
+                    <option value="r53600">Ryzen 5 3600 ($37.000)</option>
+                    <option value="r55600">Ryzen 5 5600 ($45.000)</option>
+                    <option value="intel_i3">Proc Intel Core i3 10100 4.3GHz Turbo 10th Gen ($25.900)</option>
+                    <option value="intel_i5">Proc Intel Core i5 10400F 4.3GHz Turbo 1200 Comet Lake($35.000)</option>
+                    <option value="intel_i7">Procesador Intel Core i7 10700F 4.8GHz T Socket 1200 Comet Lake($58.000)
+                    </option>
+                </select>
+                <h3 class="componente">PLACA DE VIDEO</h3>
+                <select class="optionsDropMenu" name="gpu" id="gpu" onchange="pedirModGPU(this.value)">
+                    <option value=""></option>
+                    <option value="RX580">RX 580 8GB ($85.000)</option>
+                    <option value="RX6700XT">RX 6700 XT ($107.000)</option>
+                    <option value="RX6800XT">RX 6800 XT ($160.000)</option>
+                    <option value="RTX2060">Zotac GeForce RTX 2060 12GB GDDR6 Twin Fan($78.000)</option>
+                    <option value="RTX3060">ASUS GeForce RTX 3060 12GB GDDR6 ROG STRIX GAMING OC($115.000)</option>
+                    <option value="RTX3070TI">ASUS GeForce RTX 3070 Ti 8GB GDDR6 ROG STRIX GAMING OC($197.000)</option>
+                </select>
+                <h3 class="componente">MEMORIA RAM</h3>
+                <select class="optionsDropMenu" name="ram" id="ram" onchange="pedirModRAM(this.value)">
+                    <option value=""></option>
+                    <option value="Corsair8">Corsair 8GB 3000MHZ ($13.700)</option>
+                    <option value="HyperX16">HyperX 16GB 3200MHZ ($14.500)</option>
+                    <option value="Trident16">Trident 16GB 3600MHZ ($18.500) </option>
+                    <option value="TeamForce32">Memoria DDR4 32GB 3600MHz T-Force RGB White ($28.500) </option>
+                </select>
+                <button type="button" id="botonPresupuesto" onclick="calcularCarrito()">Calcular presupuesto</button>
+            </form>
+        </div>
+
+        <div class="total">
+            <h3 class="totalPresupuesto">Su total es de Pesos AR$ <span id="presupuestoCalculado"></span></h3>
+        </div>
+    </div>
+    <div class="footer">
+        Diego Gonzalez CODER HOUSE
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  color: rgb(255, 0, 0);
+}
+
+h3 {
+  color: red;
+}
+
+.banner {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(50, 16, 241);
+  box-shadow: 5px 1px 5px rgb(8, 4, 235);
+  background-image: url(https://romy-prod-uploads.sfo3.digitaloceanspaces.com/2020/03/fondo-banner-semitono-rojo-negro_1035-17987.jpg);
+}
+
+.tituloBanner {
+  margin: 10px;
+  font-family: emoji;
+  font-weight: 600;
+  font-size: 60px;
+  color: blue;
+}
+
+.pcPresupuesto {
+  margin: 10px;
+  width: 100vw;
+  height: 500px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 5px 1px 5px black;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/781/790/396/code-css-html-javascript-wallpaper-preview.jpg);
+}
+
+.subtitulo {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.componente {
+  font-family: "Dosis", sans-serif;
+  font-weight: 550;
+  font-size: 20px;
+  color: rgb(248, 242, 242);
+}
+
+.optionsDropMenu {
+  margin: 5px 0px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20%;
+}
+
+.enviar {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(241, 118, 16);
+}
+
+.total {
+  font-family: "Dosis", sans-serif;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+#presupuestoCalculado {
+  color: rgb(5, 238, 5);
+}
+
+.footer {
+  text-align: center;
+  color: blue;
+}
+
+button {
+  cursor: pointer;
+}
